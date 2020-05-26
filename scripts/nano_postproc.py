@@ -27,6 +27,8 @@ if __name__ == "__main__":
 
     (options, args) = parser.parse_args()
 
+    print options
+    print args
     if options.friend:
         if options.cut or options.json: raise RuntimeError("Can't apply JSON or cut selection when producing friends")
 
